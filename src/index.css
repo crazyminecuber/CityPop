@@ -1,50 +1,69 @@
-body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-}
-
-ol, ul {
-    padding-left: 30px;
-}
-
-.board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-.status {
-    margin-bottom: 10px;
-}
-
-.square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
+.center_screen {
+    /*applied to component to make it centered on the screen*/
+    position: absolute;
+    left: 50%;
+    top: 20%;
     text-align: center;
-    width: 34px;
+    width: 500px;
+    transform: translate(-50%);
+
 }
 
-    .square:focus {
-        outline: none;
-    }
-
-.kbd-navigation .square:focus {
-    background: #ddd;
+.center_thing {
+    /*applied to center component within component*/
+    position: relative;
+    left: 50%;
+    text-align: center;
+    width: 300px;
+    transform: translate(-50%);
 }
 
-.game {
-    display: flex;
-    flex-direction: row;
+.search { 
+  /*style for searchbutton*/
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  border-radius: 50%;
+  width:5em;
+  height:5em;
 }
 
-.game-info {
-    margin-left: 20px;
+.search:hover {
+    background: #0b7dda;
+}
+
+a.logo:link, a.logo:visited, a.logo:link:active, a.logo:visited:active {
+    /*make logo not have underline and not stay purple after being clicked*/
+    color: black;
+    text-decoration: none;
+    background-color: none;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+a.logo:hover {
+    color: blue;
+}
+
+.card {
+    height:50px;
+    padding-top: 5%;
+}
+
+.card-body{
+    padding-top: 50%;
+    height: 100px;
+}
+
+#citycard {
+    height:100px;
 }
